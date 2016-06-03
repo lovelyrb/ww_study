@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+    <meta charset="UTF-8">
+    <title>문제은행 예제 1</title>
+</head>
+<style>
+    /* Common */
+    body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+    body,input,textarea,select,button,table{font-family:'돋움',Dotum, Helvetica,sans-serif;font-size:12px}
+    img,fieldset{border:0}
+    ul,ol{list-style:none}
+    em,address{font-style:normal}
+    a{text-decoration:none}
+    a:hover,a:active,a:focus{text-decoration:underline}
+    .blind{visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+
+
+    .list{overflow:hidden;border:solid 2px red;margin: 5px}
+    .list_item{float:left;width:50%;border:1px solid #000000;box-sizing: border-box;}
+    .tmp_img{float:left;margin-right:10px;border:1px solid red;overflow: hidden;position: relative}
+
+    dt{border:solid 1px red;}
+    dd{overflow:hidden;border:1px solid red;}
+
+    .point_wrp{display: block;}
+    .point{display: block;float:left;border:solid 1px red;}
+    .point, .star_gray, .star_red{position:relative;height:15px;}
+    .star_gray, .star_red{display: inline-block;top:0;left:0;overflow: hidden}
+    .star_red{background:red}
+    .star_gray{background: #ccc;width:100%}
+    .score{display: inline-block;position:relative;}
+
+    .title_wrp{display:block;overflow: hidden;padding-right:45px;white-space: nowrap;text-overflow: ellipsis}
+    .title_wrp .title{display:inline-block;overflow:hidden;max-width:100%;text-overflow: ellipsis;font-size: 18px;color: #005fc1 }
+    .title_wrp .icon{display:inline-block;overflow:hidden;border: solid 1px red;margin-left: 10px}
+
+    .text{min-height: 200px;font-size: 14px;color: #000000}
+
+</style>
+<body>
+<p>좌측의 이미지 사이즈가 유동적일수 있습니다. 유동적으로 높이값이 변해도 예매하기, 영화보기 버튼은 항상 이미지 </p>
+
+<ul class="list">
+    <li class="list_item">
+        <span  class="tmp_img"><img src="http://dev.ui.naver.com/tmp/?110x157" width="110" height="100" alt=""></span>
+        <dl class="title_wrp">
+            <dt>
+                <strong class="title">제목제목제목목</strong>
+                <span class="icon">상영중</span>
+            </dt>
+            <dd>
+                <div class="point_wrp">
+                    <span class="point">
+                        <span class="star_gray" style=""></span><span class="star_red" style="width:14%"></span>
+                    </span>
+                    <span class="score">8.4</span>
+                </div>
+                <span class="text">좌측의 이미지 사이즈가 유동적일수 있습니다. 유동적으로 높이값이 변해도 예매하기, 영화보기 버튼은 항상 이미지 하단라인에 자동으로 맞추어 주세요.</span>
+                <a href="#" class="btn_01">버튼</a><a href="#" class="btn_02">버튼</a>
+            </dd>
+        </dl>
+
+
+
+    </li>
+</ul>
+
+<dl>
+    <dt>제목</dt>
+    <dd>좌측의 이미지 사이즈가 유동적일수 있습니다. 유동적으로 높이값이 변해도 예매하기, 영화보기 버튼은 항상 이미지 하단라</dd>
+</dl>
+</body>
+</html>
